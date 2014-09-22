@@ -1,0 +1,605 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Getting Started | Variant Docs</title>
+
+    <meta name="description" content="Documentation and reference library for Medium Rare Variant. JavaScript, CSS, components, grid and more.">
+    <meta name="author" content="Medium Rare, inc. Medium Rare network also includes mediumra.re">
+    <meta name="copyright" content="Medium Rare Copyright (c) 2014">
+
+    <link href='assets/css/docs.css' rel='stylesheet' />
+    <script src="assets/js/modernizr.js"></script>
+  </head>
+  <body class="antialiased hide-extras">
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+         <title>Variant Documentation</title><meta name="description" content="Variant from Medium Rare is the most advanced responsive front-end framework in the world." />
+ 
+
+<!-- <nav class="tab-bar show-for-small">
+  <a class="off-canvas-left-toggle menu-icon ">
+    <span></span>
+  </a>  
+</nav> -->
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="index.html">Variant Documentation</a></h1>
+    </li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="right">
+      <li class="divider"></li>
+      <li class="has-form">
+        <a href="http://www.mediumra.re/support" class="small button">Contact Support</a>
+    </ul>
+  </section>
+</nav>
+        <nav class="tab-bar show-for-small">
+  <a class="left-off-canvas-toggle menu-icon">
+    <span>Variant Documentation</span>
+  </a>
+</nav>
+
+<aside class="marketing-left-off-canvas-menu">
+
+  <ul class="off-canvas-list">
+    <li><label class="first">Variant</label></li>
+  </ul>
+
+  <hr>
+
+  <ul class="off-canvas-list">
+	<label>Contents</label>
+
+      <li><a href="#1" data-search="">1. Quick Start</a></li>
+      <li><a href="#2" data-search="Styles">2. Managing Sections</a></li>
+      <li><a href="#3" data-search="SCSS">3. Editing Content</a></li>
+      <li class="sub"><a href="#3.1" data-search="SCSS">3.1 Editing Text</a></li>
+      <li class="sub"><a href="#3.2" data-search="SCSS">3.2 Editing Images</a></li>
+      <li class="sub"><a href="#3.3" data-search="SCSS">3.3 Editing Icons</a></li>
+      <li class="sub"><a href="#3.4" data-search="SCSS">3.4 Editing Links</a></li>
+      <li class="sub"><a href="#3.5" data-search="SCSS">3.5 Cloning Content</a></li>
+      <li class="sub"><a href="#3.6" data-search="SCSS">3.6 Trashing Content</a></li>
+      <li><a href="#4" data-search="Rails,Gem">4. Social Features</a></li>
+      <li class="sub"><a href="#4.1" data-search="Rails,Gem">4.1 Intagram Feeds</a></li>
+      <li class="sub"><a href="#4.2" data-search="Rails,Gem">4.2 Twitter Feeds</a></li>
+      <li class="sub"><a href="#4.3" data-search="Rails,Gem">4.3 Mail Chimp Forms</a></li>
+      <li class="sub"><a href="#4.4" data-search="Rails,Gem">4.4 Campaign Monitor Forms</a></li>
+      <li><a href="#5" data-search="Rails,Gem">5. Managing Navigation</a></li>
+      <li class="sub"><a href="#5.4" data-search="Rails,Gem">5.4 In Page Navigation</a></li>
+      <li><a href="#6" data-search="">6. Managing Footers</a></li>
+      <li><a href="#7" data-search="Classes">7. Saving & Loading Pages</a></li>
+      <li><a href="#8" data-search="">8. Getting Output</a></li>
+      <li><a href="#9" data-search="">9. Importing & Export pages</a></li>
+
+    </ul>
+
+    <hr>
+
+  </ul>
+</aside>
+
+<a class="exit-off-canvas" href="index.html#"></a>
+
+
+        <section role="main" class="scroll-container">
+
+          <div class="row">
+            <div class="large-3 medium-4 columns">
+              <div class="hide-for-small">
+                <div class="sidebar">
+  <h5>Variant Documentation</h5>
+  <form>
+    <!--  <label>Search Documentation</label> -->
+  </form>
+
+  <nav>
+    <ul class="side-nav">
+      <li class="heading">Contents</li>
+
+   <li><a href="#1" data-search="">1. Quick Start</a></li>
+      <li><a href="#2" data-search="Styles">2. Managing Sections</a></li>
+      <li><a href="#3" data-search="SCSS">3. Editing Content</a></li>
+      <li class="sub"><a href="#3.1" data-search="SCSS">3.1 Editing Text</a></li>
+      <li class="sub"><a href="#3.2" data-search="SCSS">3.2 Editing Images</a></li>
+      <li class="sub"><a href="#3.3" data-search="SCSS">3.3 Editing Icons</a></li>
+      <li class="sub"><a href="#3.4" data-search="SCSS">3.4 Editing Links</a></li>
+      <li class="sub"><a href="#3.5" data-search="SCSS">3.5 Cloning Content</a></li>
+      <li class="sub"><a href="#3.6" data-search="SCSS">3.6 Trashing Content</a></li>
+      <li><a href="#4" data-search="Rails,Gem">4. Social Features</a></li>
+      <li class="sub"><a href="#4.1" data-search="Rails,Gem">4.1 Intagram Feeds</a></li>
+      <li class="sub"><a href="#4.2" data-search="Rails,Gem">4.2 Twitter Feeds</a></li>
+      <li class="sub"><a href="#4.3" data-search="Rails,Gem">4.3 Mail Chimp Forms</a></li>
+      <li class="sub"><a href="#4.4" data-search="Rails,Gem">4.4 Campaign Monitor Forms</a></li>
+      <li><a href="#5" data-search="Rails,Gem">5. Managing Navigation</a></li>
+      <li class="sub"><a href="#5.4" data-search="Rails,Gem">5.4 In Page Navigation</a></li>
+      <li><a href="#6" data-search="">6. Managing Footers</a></li>
+      <li><a href="#7" data-search="Classes">7. Saving & Loading Pages</a></li>
+      <li><a href="#8" data-search="">8. Getting Output</a></li>
+      <li><a href="#9" data-search="">9. Importing & Export pages</a></li>
+
+    </ul>
+  </nav>
+
+
+
+</div>
+              </div>
+            </div>
+            <div class="large-9 medium-8 columns">
+              <img alt="Variant" src="assets/img/variant.svg" class="medium-3 logo" />
+              <h1 id="getting-started">Getting Started</h1>
+              <h3 class="subheader">Hello and thankyou for purchasing a Variant enabled template by Medium Rare. This documentation will give you an understanding of how Variant works and guide you in performing common functions. If you require further assistance not covered in this documentation, please contact us on our support forum via the button in the top right-hand corner.</h3>
+
+<hr>
+<a id="1"></a>
+<div class="row">
+  <div class="medium-12 columns">
+    <h3><strong>1. Quick Start - An overview of how Variant works</strong></h3>
+	<hr>
+  </div>
+
+
+	<div class="medium-11 columns right">
+		<h3><strong>Open Variant</strong></h3>
+		<p>Open the builder.html file in your web browser and click the 'Start New Page' button located in the center of the page.</p>
+		<h3><strong>Add Content</strong></h3>
+		<p>You will notice that the available sections panel has opened. Add some sections to your page by clicking on the section thumbnail. You will see that once a section is added to the page, it also gets added to your layout map in the sidebar. Try adding some different content sections and reordering them by dragging their titles up and down in the layout map on the sidebar.<br /><br />Add a navigation by clicking the 'Navigation Styles' button in the sidebar, select your desired style from the list to add it to your page.</p>
+		<h3><strong>Get Output</strong></h3>
+		<p>Once you have added sections to your page and edited content. Click the green 'Get Output' button in the bottom right-hand corner of the sidebar, this will show a modal with your page's HTML. Copy and paste this HTML into a file eg. 'my-page.html' and place it in the root template directory (not the variant directory).<br /><br />Open this file in your browser to view.</p>
+		<hr>
+	</div>
+	
+	<a id="2"></a>
+	<div class="medium-12 columns">
+		<h3><strong>2. Managing Sections</strong></h3>
+			<div class="medium-11 columns right">
+				<p><strong>2.1 Adding Sections:</strong>
+					<br />
+					To add a section, click the large plus button on the sidebar. This will open the 'Add Sections' panel. From here, add sections to your page by clicking on their thumbnail (see figure 2.1.1). You will notice that section types are categorised and are filterable by clicking on the appropriate filter button at the top (eg. 'Dividers' will show sections that have full width background images) 
+				
+				<figure> 
+						<img src="assets/img/add-content.jpg" />
+						<span>figure 2.1.1 Click a thumbnail to add that section to your layout</span>
+					</figure>
+				</p>
+				<p><strong>2.2 Reordering Sections:</strong>
+					<br />
+					To reorder sections on the page, simply drag and drop the title of the section up or down (see figure 2.2.1) in the layout map in the sidebar.
+				
+					<figure> 
+						<img src="assets/img/reorder-sections.jpg" />
+						<span>figure 2.2.1 Drag sections up and down to rearrange the order of your layout </span>
+					</figure>
+				</p>
+				<p><strong>2.3 Renaming Sections:</strong>
+					<br />
+					Renaming sections is useful when creating a page that has a 'one page navigation' style. To rename a section, click on its title in the sidebar and change the text (see figure 2.3.1). You will notice that a link icon appears when you make this change, this is to signify that this section is now 'linkable' as an inner page navigation option (more on this in <a href="#4.1">section 4.1</a>)
+				
+					<figure> 
+						<img src="assets/img/rename-section.jpg" />
+						<span>figure 2.3.1 Click on a section title to rename it - doing this makes it available for in-page navigation in the "Edit Link" panel</span>
+					</figure>
+				
+				</p>
+				<p><strong>2.4 Removing Sections:</strong>
+					<br />
+					To remove a section, hover over its title in the layout map on the sidebar and you will see a trash bin icon fly in from the right. Click the trash bin icon to remove the section.
+				</p>
+				<hr>
+			</div>
+	</div>
+	
+	<a id="3"></a>
+	<div class="medium-12 columns">
+		<h3><strong>3. Editing Content</strong></h3>
+			<div class="medium-11 columns right">
+				<a id="3.1"></a>
+				<p><strong>3.1 Editing Text</strong>
+					<br />
+					Click on any text element on the page and you will see a cursor appear where you can edit the text of the element (see figure 3.1.1). You are free to paste text into any element.
+				
+					<figure> 
+						<img src="assets/img/edit-text.jpg" />
+						<span>figure 3.1.1 Click any text on the page to edit the text</span>
+					</figure>
+				</p>
+				<a id="3.2"></a>
+				<p><strong>3.2 Editing Images</strong>
+					<br />
+					<em>Important Note: Variant looks for your images directly inside the 'img' directory of the template (not the variant/img directory). If you add images that are not contained directly within the 'img' folder, an error will appear over the image prompting you to move the image file to the img folder and click to refresh.</em><br /><br />
+					Many elements within Variant templates have editable images. To edit the image, right click on the element and click 'Edit Image' in the context menu (See figure 3.2.1), this will show the 'Edit Image' panel.<br />
+					From here, you can manually enter an 'src' value (be it local or elsewhere on the web) and also the 'alt' value for the image. (see figure 3.2.2)<br /><br />
+					To select images from your 'img' directory, click the 'Toggle Chooser' button and select your image.<br />
+					Click 'Save' when done to commit changes - you will see your image appear immediately.<br /><br />
+					<em>Please note: Variant does not automatically resize or crop your images, see the image sizes of the supplied imagery as a guide.</em>
+					
+					<figure>
+						<img src="assets/img/right-click-image.jpg" />
+						<span>figure 3.2.1 Right click an image to edit the image path</span>
+					</figure>
+					
+					<figure><img src="assets/img/image-chooser-modal.jpg"/>
+					<span>figure 3.2.2 Right click an image to edit the image path</span>
+					</figure>
+				</p>
+				<a id="3.3"></a>
+				<p><strong>3.3 Editing Icons</strong>
+					<br />
+					To edit an icon, right click on it and select 'Edit Icon' from the context menu (see figure 3.3.1)- the icon chooser panel will appear. From here, select the icon you wish to use and click 'done' (see figure 3.3.2). <br/ ><br />
+					<em>Power User tip: If the icon chooser panel is covering the area of the page where the icon resides, simply hover your cursor outside the icon chooser panel to make it transparent</em>
+					
+					<figure> 
+						<img src="assets/img/right-click-icon.jpg" />
+						<span>figure 3.3.1 Right click an icon to edit the image path</span>
+					</figure>
+					
+					<figure><img src="assets/img/icon-chooser-modal.jpg"/>
+					<span>figure 3.3.2 Right click an icon to edit the image path</span>
+					</figure>
+				</p>
+				<a id="3.4"></a>
+				<p><strong>3.4 Editing Links</strong>
+					<br />
+					To edit a link, right click on it and select 'Edit Link' from the context menu (see figure 3.4.1) - the Edit Link panel will appear. From here you can edit the 'href' value of the link and also the 'target' value. Make your changes and click 'save' to commit. (see figure 3.4.2)
+				
+					<figure> 
+						<img src="assets/img/right-click-link.jpg" />
+						<span>figure 3.4.1 Right click a link to edit the link path</span>
+					</figure>
+					
+					<figure>
+						<img src="assets/img/edit-link-modal.jpg"/>
+						<span>figure 3.4.2 Enter your desired href value and select a target.  If you have in-page links (see figure 2.3.1), they will be selectable at the top of this box</span>
+					</figure>
+				</p>
+				
+				<a id="3.5"></a>
+				<p><strong>3.5 Cloning Content</strong>
+					<br />
+					Variant enables you to clone content by right-clicking on an element and selecting 'Clone' from the context menu (see figure 3.5.1). This will make an exact copy of the element and is especially useful for sections such as 'services' (where you may require more than the section initially shows).
+				
+					<figure> 
+						<img src="assets/img/clone-item.jpg" />
+						<span>figure 3.5.1 Right click an element to clone it</span>
+					</figure>
+					
+				
+				</p>
+				<a id="3.6"></a>
+				<p><strong>3.6 Trashing and recovering content</strong>
+					<br />
+					Variant enables you to remove content from the page by right clicking and selecting 'Remove' from the context menu (see figure 3.6.1). This content is always recoverable by clicking the red 'Show Trash' button in the bottom left-hand corner of the sidebar (see figure 3.6.2). You will see your trashed content re-appear on the page greyed-out with a red border (see figure 3.6.3). To recover this content, simply click on it - you will notice it now appears on the page as normal.<br /><br />
+					Be sure to click 'Hide Trash' once you're finished recovering removed content to avoid strange positioning. All trashed content will be saved with your page but is removed in the final HTML document.
+				
+					
+					<figure> 
+						<img src="assets/img/remove-content.jpg" />
+						<span>figure 3.6.1 Right click an element to remove it</span>
+					</figure>
+				
+					<figure>
+						<img src="assets/img/show-trash-button.jpg"/>
+						<span>figure 3.6.2 Click "Show Trash" button to reveal your deleted items.</span>
+					</figure>
+				
+					<figure> 
+						<img src="assets/img/show-trash.jpg" />
+						<span>figure 3.6.3 With your trashed items shown, left-click the faded deleted items to un-delete them</span>
+					</figure>
+				
+				</p>
+				<a id="3.7"></a>
+				<p><strong>3.7 Adjusting Column Widths</strong>
+					<br />
+					Most elements such as services, pricing tables, text, etc. allow you to edit the column-width. This is especially useful if you have a specific number of elements you want that differs from the original layout. To adjust the width of an element, right click it and select either 'Increase Columns Width' or 'Decrease Column Width' from the context menu as appropriate.
+					<br /><br />
+					<em><strong>Power User Tip:</strong> Use the '[' key to decrease column width and the ']' to increase column width</em>
+				</p>
+				
+				<hr>
+			</div>
+	</div>
+	
+	<a id="4"></a>
+	<div class="medium-12 columns">
+		<h3><strong>4. Social Features</strong></h3>
+			<div class="medium-11 columns right">
+				<a id="4.1"></a>
+				<p><strong>4.1 Adding an Instagram feed:</strong>
+					<br />
+					Some Variant templates come with an integrated Instagram feed section. To change which feed is displayed, first add the section to your page, then right-click it and select 'Edit Instagram Feed', then type in the desired Instagram username you wish to display.
+			
+					<figure> 
+							<img src="assets/img/instagram.jpg" />
+							<span>figure 4.1.1 Enter the name of the Instagram user you wish to display and hit 'Save'</span>
+					</figure>
+			</p>
+				<p><a id="4.2"></a>
+					<strong>4.2 Adding a Twitter feed:</strong>
+					<br />
+					Some Variant templates come with an integrated Twitter feed section. To change which feed is displayed you will need to create a Twitter widget in your settings page on Twitter account.
+					<br /><br />Do this by going to the 'Settings' page of your Twitter account and clicking 'Widgets'. Click 'Create New' and then 'Create Widget'. One done, go back to the 'Widgets' page and click 'Edit' on your newly created widget. From here you need to copy the widget id out of the url bar. The widget id is the long numerical string after /widgets/ and before /edit and paste it into the 'Widget ID' box of the 'Edit Twitter Feed' modal.				
+					
+					<figure> 
+							<img src="assets/img/twitter.jpg" />
+							<span>figure 4.2.1 Enter your Twitter widget ID in this box to link the feed to your account</span>
+					</figure>
+				</p><a id="4.3"></a>
+				<p><strong>4.3 Linking forms with Mail Chimp</strong>
+					<br />
+					Some Variant templates come with Mail Chimp enabled forms. You will see in the 'Add Sections' panel that some forms have the Mail Chimp and Campaign Monitor logos.<br /><br />
+					To link a form with Mail Chimp, first add the relevant form to your page, then right-click on it and click 'Embed Mailing List Form'.
+					<br />
+					<br />
+					<ul>
+					<li>From here you will need to go to your account on the Mail Chimp website and select your relevant list from the 'Lists' tab.</li>
+					<li>Once here, click 'Signup Forms' then 'Embedded Forms'</li>
+					<li>The relevant form you select the code for will depend on the style of form you have selected. The 'Embed Mailing List Form' widget will instruct you as to which form code you need to copy.</li>
+					<li>Copy the form code and paste it into the 'Form Embed Code' field in the 'Embed Mailing List Form' modal and click 'Save'</li>
+					</ul><br /><br />
+					<figure> 
+							<img src="assets/img/mail-chimp.jpg" />
+							<span>figure 4.3.1 Enter your copied form code from Mail Chimp into this field</span>
+					</figure>
+				</p>
+				<a id="4.4"></a>
+				<p><strong>4.4 Linking forms with Campaign Monitor</strong>
+					<br />
+					Some Variant templates come with Campaign Monitor enabled forms. You will see in the 'Add Sections' panel that some forms have the Mail Chimp and Campaign Monitor logos.<br /><br />
+					To link a form with Campaign, first add the relevant form to your page, then right-click on it and click 'Embed Mailing List Form'.
+					<br />
+					<br />
+					<ul>
+					<li>From here you will need to go to your account on the Campaign Monitor website and select your relevant list from the 'Lists & Subscribers' tab.</li>
+					<li>Once here, click 'Grow Your Audience' in the sidebar and click 'Copy/paste a form to your site'</li>
+					<li>Click 'Get Code' and copy it to the clipboard</li>
+					<li>Paste the form code into the 'Form Embed Code' field in the 'Embed Mailing List Form' modal and click 'Save'</li>
+					</ul><br /><br />
+				
+					<figure> 
+							<img src="assets/img/campaign-monitor.jpg" />
+							<span>figure 4.4.1 Enter the code you copied from the Campaign Monitor website into this box and hit 'Save'</span>
+					</figure>
+				
+				
+				</p>
+				
+				<hr>
+			</div>
+	</div>
+	
+	<a id="5"></a>
+	<div class="medium-12 columns">
+		<h3><strong>4. Managing Navigation</strong></h3>
+			<div class="medium-11 columns right">
+				<p><strong>5.1 Adding a menu:</strong>
+					<br />
+					To add a menu, select a navigation style from the 'Navigation Style' dropdown in the sidebar.
+			
+					<figure> 
+							<img src="assets/img/custom-nav-dropdown.jpg" />
+							<span>figure 5.1.1 Select a nav style from the list to have that menu added to your page</span>
+					</figure>
+			</p>
+				<p><strong>5.2 Saving a menu:</strong>
+					<br />
+					When you edit the text on any menu item for the first time, you will be prompted to name and save your nav (see figure 5.2.1). Once done, this nav will appear in the 'Navigation Styles' dropdown list in the sidebar, you can then select this nav on any page you create.
+				
+					
+					<figure> 
+							<img src="assets/img/save-nav.jpg" />
+							<span>figure 5.2.1 Enter a name for this nav - which will now be available across all your pages and saved if you refresh the page</span>
+					</figure>
+				</p>
+				<p><strong>5.3 Managing links in your menu:</strong>
+					<br />
+					Building your menu is a matter of cloning (or removing, if unnecessary) existing menu items and then changing the details (text and href) to suit. By default, your template will come with all available menu options (such as dropdowns etc). 
+				</p>
+				<a id="5.4">
+				<p><strong>5.4 In Page Navigation</strong>
+					<br />
+					If you are building a 'one page' site or a page that requires inner links, follow this process to ensure correct 'smooth scroll' navigation function:
+					<ul>
+						<li>Name your sections appropriately in the layout map on the sidebar (see figure 2.3.1). When you rename a section you will notice a link icon appears beside it - this signifies that this section is now available as an inner link option</li>
+						<li>When editing your links in the menu, you will see a select option 'Select an in-page navigation link' (see figure 5.5.1). Choose the appropriate section from the menu and you will notice the 'href' value fills out for you. Click save to commit</li>
+					</ul>
+				
+					<figure> 
+							<img src="assets/img/inner-link-save.jpg" />
+							<span>figure 5.5.1 Select your link from this dropdown to have it connected via smooth-scroll to your in-page link</span>
+					</figure>
+				
+				
+				</p>
+				
+				<hr>
+			</div>
+	</div>
+
+	<a id="6"></a>
+	<div class="medium-12 columns">
+		<h3><strong>6. Managing Footers</strong></h3>
+		<div class="medium-11 columns right">
+			<p>
+				Managing footers works in a similar way to navigation. Add a footer to your page by selecting an option from the 'Footer Styles' dropdown in the sidebar (see figure 5.1.1).<br /><br />
+				The first time you change text on the footer, you will be prompted to name and save the footer (see figure 5.1.2).  Once done - your saved footer will appear in the 'Footer Styles' dropdown. This makes it easy to use the same footer across multiple pages.
+			
+					<figure> 
+							<img src="assets/img/footer-dropdown.jpg" />
+							<span>figure 5.1.1 Select a footer style to have it added to the foot of your page</span>
+					</figure>
+					
+					<figure> 
+							<img src="assets/img/save-footer.jpg" />
+							<span>figure 5.1.2 Give your footer a name, then you can use it across any page you make</span>
+					</figure>
+					
+				
+			
+			
+			
+			</p>
+			<hr />
+		</div>
+	</div>
+	
+	<a id="7"></a>
+	<div class="medium-12 columns">
+		<h3><strong>7. Saving & Loading Pages</strong></h3>
+		<div class="medium-11 columns right">
+			<p><strong>7.1 Saving Pages</strong>
+					<br />
+					To save a page for later use, open the options panel by clicking the cog icon in the top right corner of the sidebar and click 'Save Page As' (see figure 7.1.1). Name your page and click 'save'  (see figure 7.1.2). You will now see your page appear inside the options modal - return to this page at any time by clicking on the page icon.
+					<br /><br />
+					<em>Note: All content changes such as text, image, icon, page title, section title etc. are always saved to your current page name.</em>
+				
+						<figure> 
+							<img src="assets/img/save-page-button.jpg" />
+							<span>figure 7.1.1 Save your page for later use</span>
+					</figure>
+					
+					<figure> 
+							<img src="assets/img/save-page-modal.jpg" />
+							<span>figure 7.1.2 Add a name for your page and click "Save"</span>
+					</figure>
+					
+					
+				</p>
+			<p><strong>7.2 Loading Pages</strong>
+					<br />
+					When loading Variant, you will be prompted to either start a new page or load the previous page (if one exists). Clicking 'Load PAGE-TITLE' will load a previously saved page. To select a different saved page, open the options panel by clicking on the cog in the top right corner of the sidebar and select the appropriate page (see figure 7.2.1).
+					<figure> 
+							<img src="assets/img/saved-pages-panel.jpg" />
+							<span>figure 7.2.1 Click your desired page to load it</span>
+					</figure>
+	
+			</p>
+				
+			<p><strong>7.3 Deleting Pages</strong>
+					To delete a page, open the options panel, hover on the appropriate page, you will see a cross icon appear in the top right corner. Click this to remove the page.
+				</p>
+			<hr />
+		</div>
+	</div>
+	
+	<a id="8"></a>
+	<div class="medium-12 columns">
+		<h3><strong>8. Getting Output</strong></h3>
+		<div class="medium-11 columns right">
+			<p><strong>Getting HTML</strong>
+					Variant builds your HTML on the fly so you can click the 'Get Source' button at any time to retrieve a complete and functional HTML document (see figure 8.1.1).<br /><br />
+					Click the green 'Get Source' button in the bottom right-hand corner of the sidebar and the 'Your Code' panel will appear (see figure 8.1.2). From here you can copy your pages HTML.
+				
+				<figure> 
+							<img src="assets/img/get-output.jpg" />
+							<span>figure 8.1.1 Click the green button to get the HTML code for your current page</span>
+					</figure>
+					<figure> 
+							<img src="assets/img/output-modal.jpg" />
+							<span>figure 8.1.2 Copy your code to a text editor and save it as an .html file and view it in your web browser</span>
+					</figure>
+				</p>
+			<p><strong>Saving HTML</strong>
+					Use a text editor to paste your page's code in and save it as an HTML file (eg. my-new-page.html). Place this file inside the template root directory (NOT the variant directory)
+				</p>
+				
+			<p><strong>Viewing your page</strong>
+					Open your HTML in a web browser to view, voila! :)
+				</p>
+			<hr />
+		</div>
+	</div>
+	
+	<a id="9"></a>
+	<div class="medium-12 columns">
+		<h3><strong>9. Exporting / Importing .variant pages</strong></h3>
+		<div class="medium-11 columns right">
+			<p><strong>Exporting Pages</strong><br /><br />
+					As of Variant 2.0, you can now export pages so they can be imported into Variant later and revised / updated. This feature is especially useful if multiple people want to work on the file, someone can export the file as .variant, send to their collaborator, who can then import and modify.
+					<br />
+					<br />
+					To export a page, first save it (as described in 7.1), then hover on the page's title in the 'Options' modal. Click the blue cube icons to export the page. The page should download as a .variant file immediately from your browser. Alternatively you can export all saved pages to a single .variant file by clicking 'Export all as .variant'
+				<figure> 
+							<img src="assets/img/export-page.jpg" />
+							<span>figure 9.1.1 Export a .variant page by clicking on the cube icon</span>
+					</figure>
+			</p><br /><br />
+
+			<p><strong>Importing Pages</strong><br /><br />
+					To import a page, click the green 'Import' button on the 'Options' modal. Browse for your .variant file and click 'Open'. Once imported, a modal will appear with an Import report.<br />
+					Note: You can not import pages from different Variant templates. For example, you can't make a page in Pangaea and import it into Pivot.<br /><br />
+					Once the page has imported, simply click its title to load it into the main page area and continue editing.
+				<figure> 
+							<img src="assets/img/import-pages.jpg" />
+							<span>figure 9.1.2 Import a .variant page, then click its title to load it</span>
+					</figure>
+			</p>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+
+</div><!--end of row-->
+
+            </div>
+          </div>
+
+
+
+
+        </section>
+
+      </div>
+    </div>
+
+    <script src="http://foundation.zurb.com/docs/assets/js/templates.js"></script>
+    <script src="http://foundation.zurb.com/docs/assets/js/all.js"></script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(
+        ['_setAccount', 'UA-2195009-2'],
+        ['_trackPageview'],
+        ['b._setAccount', 'UA-2195009-27'],
+        ['b._trackPageview']
+      );
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script>
+      $(document).foundation().foundation('joyride', 'start');
+    </script>
+    <script>
+    	$(document).ready(function(){
+    		$(window).scroll(function(){
+    			if(scrollY>80){
+    				$('nav').addClass('sticky-nav');
+    			}else{
+    				$('nav').removeClass('sticky-nav');
+    			}
+    		});
+    	});
+    </script>
+  <script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&"www.cloudflare.com/email-protection"==a.substr(7 ,35)){s='';j=43;r=parseInt(a.substr(j,2),16);for(j+=2;a.length-j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+</html>

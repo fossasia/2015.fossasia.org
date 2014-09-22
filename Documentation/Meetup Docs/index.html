@@ -1,0 +1,453 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Getting Started | Meetup Docs</title>
+
+    <meta name="description" content="Documentation and reference library for Medium Rare Meetup. JavaScript, CSS, components, grid and more.">
+    <meta name="author" content="Medium Rare, inc. Medium Rare network also includes mediumra.re">
+    <meta name="copyright" content="Medium Rare Copyright (c) 2014">
+
+    <link href='assets/css/docs.css' rel='stylesheet' />
+    <script src="assets/js/modernizr.js"></script>
+  </head>
+  <body class="antialiased hide-extras">
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+         <title>Meetup Documentation</title><meta name="description" content="Meetup from Medium Rare is the hottest new way to get people to attend your conference or event." />
+ 
+
+<!-- <nav class="tab-bar show-for-small">
+  <a class="off-canvas-left-toggle menu-icon ">
+    <span></span>
+  </a>  
+</nav> -->
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="index.html">Meetup Documentation</a></h1>
+    </li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="right">
+      <li class="divider"></li>
+      <li class="has-form">
+        <a href="http://mediumrare.ticksy.com/" class="small button">Support Forum</a>
+    </ul>
+  </section>
+</nav>
+        <nav class="tab-bar show-for-small">
+  <a class="left-off-canvas-toggle menu-icon">
+    <span>Meetup Documentation</span>
+  </a>
+</nav>
+
+<aside class="marketing-left-off-canvas-menu">
+
+  <ul class="off-canvas-list">
+    <li><label class="first">Meetup</label></li>
+  </ul>
+
+  <hr>
+
+  <ul class="off-canvas-list">
+	<label>Contents</label>
+
+      <li><a href="#file-structure" data-search="">File Structure</a></li>
+      <li><a href="#grid-structure" data-search="Styles">Grid System</a></li>
+      <li><a href="#icon-pack" data-search="">Using Icons</a></li>
+      <li><a href="#sliders" data-search="Global Styles,Global Mixins,Global Variables,Useful HTML Classes">Using Sliders</a></li>
+      <li><a href="#parallax" data-search="">Parallax Backgrounds</a></li>
+      <li><a href="#schemes" data-search="">Colour Schemes</a></li>
+      <li><a href="#lightbox" data-search="">Lightbox Galleries</a></li>
+      <li><a href="#instagram" data-search="">Instagram Feed</a></li>
+      <li><a href="#twitter" data-search="">Twitter Feed</a></li>
+      <li><a href="#countdown" data-search="">Countdown Timer</a></li>
+	  <li><a href="#mail-form-smtp" data-search="">Mail form using SMTP with Swift Mailer</a></li>
+      <li><a href="#mail-form-mail" data-search="">Mail form using mail() with Swift Mailer</a></li>
+
+    </ul>
+
+    <hr>
+
+  </ul>
+</aside>
+
+<a class="exit-off-canvas" href="index.html#"></a>
+
+
+        <section role="main" class="scroll-container">
+
+          <div class="row">
+            <div class="large-3 medium-4 columns">
+              <div class="hide-for-small">
+                <div class="sidebar">
+  <h5>Meetup Documentation</h5>
+  <form>
+    <!--  <label>Search Documentation</label> -->
+  </form>
+
+  <nav>
+    <ul class="side-nav">
+      <li class="heading">Contents</li>
+
+      <li><a href="#file-structure" data-search="">File Structure</a></li>
+      <li><a href="#grid-structure" data-search="Styles">Grid System</a></li>
+      <li><a href="#icon-pack" data-search="">Using Icons</a></li>
+      <li><a href="#sliders" data-search="Global Styles,Global Mixins,Global Variables,Useful HTML Classes">Using Sliders</a></li>
+      <li><a href="#parallax" data-search="">Parallax Backgrounds</a></li>
+      <li><a href="#schemes" data-search="">Colour Schemes</a></li>
+      <li><a href="#lightbox" data-search="">Lightbox Galleries</a></li>
+      <li><a href="#instagram" data-search="">Instagram Feed</a></li>
+      <li><a href="#twitter" data-search="">Twitter Feed</a></li>
+      <li><a href="#countdown" data-search="">Countdown Timer</a></li>
+      <li><a href="#mail-form-smtp" data-search="">Mail form using SMTP with Swift Mailer</a></li>
+      <li><a href="#mail-form-mail" data-search="">Mail form using mail() with Swift Mailer</a></li>
+    </ul>
+  </nav>
+
+
+
+</div>
+              </div>
+            </div>
+            <div class="large-9 medium-8 columns">
+              <h1 id="getting-started">Getting Started</h1>
+              <h3 class="subheader">Hello and thankyou for purchasing Meetup by Medium Rare. This documentation will give you an understanding of how Meetup is structured and guide you in performing common functions. If you require further assistance not covered in this documentation, please contact us via the button in the top right-hand corner.</h3>
+			  <h3 class="subheader"><strong>Essentials:</strong></h3>
+			  <ul>
+			  	<li>This template is based on Bootstrap 3.2 responsive framework</li>
+			  	<li>Chrome for Win or Mac (use the inspector, right click -> inspect element to make your life easier)</li>
+			  	<li>A decent text editor like Notepad++ for Win or Text Wrangler for Mac</li>
+			  	<li>When using Variant - Run in Chrome or Firefox for full features and best performance (Safari is unable to export files and IE is not supported at this time)</li>
+			  </ul>
+
+<hr>
+<a id="file-structure"></a>
+<div class="row">
+  <div class="medium-12 columns">
+    <h3><strong>1. File Structure</strong></h3>
+    <p>As Meetup is an HTML template, it uses a number of .html pages in conjunction with css stylesheets and a number of javascript plugins. The following is a brief overview of the files and a look at some prominent features.</p>
+	<hr>
+  </div>
+
+
+	<div class="medium-11 columns right">
+		<h3>HTML Files</h3>
+		<p>Each page that comes included with Meetup is housed inside its own HTML file. You will find all these files residing in the root directory of the download package.</p>
+		<p>Note that index.html will be the file your browser defaults to when you navigate to the Meetup directory in your web browser</p>
+		<hr>
+		<h3>CSS Files</h3>
+		<p>Meetup comes with a number of CSS files, many of which you will likely never touch. There are two however, that you will likely edit if you are changing the style of the site in anyway.</p>
+		<p><strong>theme.css</strong><br />This is the main stylesheet for the template and includes all styles relating to the appearance of the elements you see inside each page. This stylesheets has been commented for ease of use and all style rules are grouped under particular headings such as /*** SLIDER STYLES ***/</p>
+		<p><strong>Responsive styles</strong><br />All CSS media queries are found at the bottom of theme.css, these styles modify how some of the content in Meetup appears on tablet and smartphones, if you need to edit anything specific to these devices, go here.</p>
+		<hr>
+		<h3>Javascript Files</h3>
+		<p>As with the CSS files, there are a number of JS files that you'll unlikely need to touch. They are mostly plugins such as isotope and smooth scroll. Unless you know what you're doing, don't touch the JS files as any tinkering could result in undesired behaviour back in the browser.</p>
+		<p><strong>scripts.js</strong><br />This is the main scripts file for the template that includes all functions specific to the theme such as control of the navigation and slider declarations among other things. You will see that the file is structured as <code>$(document).ready(function(){});</code> followed by <code>$(window).load(function(){});</code></p>
+		<hr>
+	</div>
+	
+	<a id="grid-structure"></a>
+	<div class="medium-12 columns">
+		<h3><strong>1.1 Grid System</strong></h3>
+		<p>Meetup is based on Bootstrap 3.2 The 12 column grid system is flexible and easy to understand. For a more thorough explanation of the grid go <a target="_blank" href="http://getbootstrap.com/css/#grid">here</a></p>
+		<hr>
+	</div>
+	
+	<a id="icon-pack"></a>
+	<div class="medium-12 columns">
+		<h3><strong>3. Using the Icon Pack</strong></h3>
+		<p>Meetup makes use of an awesome icon pack provided by <a target="_blank" href="http://www.pixeden.com/">Pixeden</a>. Using the icon pack is a simple matter of knowing the correct class to use.</p>
+	</div>
+	
+	<div class="medium-11 columns right">
+		<p>You can find the appropriate class names for each icon here: <a target="_blank" href="http://themes-pixeden.com/font-demos/7-stroke/">Pixeden icon font pack</a>. </p>
+		<p><strong>Icon Usage:</strong></p>
+		<p><code>&lt;i class="icon pe-7s-NAME"&gt;&lt;/i&gt;</code></p>
+		<p><code>&lt;i class="icon pe-7s-umbrella"&gt;&lt;/i&gt;</code> will give you an umbrella icon, who would have guessed!?</p>
+		<hr>
+	</div>
+	
+	<a id="sliders"></a>
+	<div class="medium-12 columns">
+		<h3><strong>4. Sliders</strong></h3>
+		<p>Meetup uses WOO Themes Flexslider plugin as its primary slider manager. You can view all available options for the plugin at <a target="_blank" href="www.woothemes.com/flexslider/">WOO Themes website</a></p>
+		
+	</div>
+	
+	<div class="medium-11 columns right">
+		<p>Here are the JS declarations for the different slider types used in Meetup: (note that you can add the class 'slider-fullscreen' to any slider to make it fullscreen)</p>
+		<ul>
+			<li><strong>Hero Slider:</strong><br />
+				<pre><code>
+$('.hero-slider').flexslider({});
+				</code></pre>
+			</li>
+			
+			<li><strong>Testimonials Slider:</strong><br />
+				<pre><code>
+$('.testimonials-slider').flexslider({ directionNav: false });
+				</code></pre>
+			</li>
+
+		</ul>
+		<hr>
+	</div>
+	
+<a id="parallax"></a>
+	<div class="medium-12 columns">
+		<h3><strong>5. Parallax Backgrounds</strong></h3>
+		<p>Many fullscreen background elements in Meetup use a parallax effect when scrolling. This effect is disabled for touch devices to improve performance.<br /><br />
+		Enabling the parallax effect requires you to add the class '.parallax-background' to the '.background-image-holder' element like so:
+		</p>
+		
+	</div>
+	
+	<div class="medium-11 columns right">
+			<li>
+				<pre><code>
+&lt;section&gt;
+	&lt;div class="background-image-holder parallax-background"&gt;
+		&lt;img alt="Background Image" class="background-image" src="img/my-image.jpg" /&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+				</code></pre>
+			</li>
+		</ul>
+		<hr>
+	</div>
+	
+<a id="schemes"></a>
+	<div class="medium-12 columns">
+		<h3><strong>6. Colour Schemes</strong></h3>
+		<p>Meetup ships with 19 different colour schemes. Using Variant, you can change the colour scheme simply by clicking the 'Colour Scheme' tab in the sidebar and selecting your desired scheme from the swatches.<br /><br />
+		Outside of Variant you will need to include the appropriate CSS file in the head of your document. For example, if you wanted to use the 'Cobalt' colour scheme you would include the following:
+		</p>
+		
+		<pre><code>
+&lt;link href="css/theme-cobalt.css" rel="stylesheet" type="text/css" media="all"/&gt;
+		</code></pre>
+		
+		<p>
+			<strong>Creating your own colour scheme with Less</strong><br /><br />
+			As Meetup comes with .less files, you can easily change the colour scheme in theme.less<br />
+			The colour variables are as follows:<br /><br />
+			@color-primary;<br />
+			<br />
+			Edit this value inside the theme.less file and compile to generate your own colour scheme.<br />
+		</p>
+		
+	</div>
+	
+	<a id="lightbox"></a>
+	<div class="medium-12 columns">
+		<h3><strong>7. Lightbox Galleries</strong></h3>
+		<p>Meetup makes use of the lightbox gallery javascript plugin and is simple to setup on any image element by observing the following conventions. The image must be wrapped in an 'a' tag and contain a href that points to the large image (the one you want to show when the user clicks on the thumbnail). Inside the 'a' you need an 'img' element whose 'src' value points to the thumbnail image. As so:
+		</p>
+		
+	</div>
+	
+	<div class="medium-11 columns right">
+			<li>
+				<pre><code>
+&lt;a href="img/my-image-large.jpg" class="lightbox-link-mrv" data-lightbox="true"  data-title="My Image's Title"&gt;
+	&lt;img class="lightbox-image" alt="Designer" src="img/my-image-thumb.jpg" /&gt;
+&lt;/a&gt;
+				</code></pre>
+			</li>
+		</ul>
+		<hr>
+	</div>
+	
+	<a id="instagram"></a>
+	<div class="medium-12 columns">
+		<h3><strong>8. Embedding an Instagram Feed</strong></h3>
+		<p>The Instagram feed element uses a HTML5 data attribute called 'data-user-name' to determine which feed to display. Changing it is as simple as entering your Instagram username into the attribute like so (leave the containing 'ul' element empty as this is populated by the Spectragram plugin):</p>
+	</div>
+	
+	<div class="medium-11 columns right">
+			<li>
+				<pre><code>
+&lt;div class="instafeed" data-user-name="YOUR-USERNAME-HERE"&gt;
+	&lt;ul&gt;&lt;/ul&gt;
+&lt;/div&gt;
+				</code></pre>
+			</li>
+		</ul>
+		<hr>
+	</div>
+	
+<a id="twitter"></a>
+	<div class="medium-12 columns">
+		<h3><strong>8. Embedding a Twitter Feed</strong></h3>
+		<p>The Twitter feed element uses a HTML5 data attribute called 'data-widget-id' to determine which feed to display. Changing it requires you to create a widget from your Twitter account.<br /><br />Do this by going to the 'Settings' page of your Twitter account and clicking 'Widgets'. Click 'Create New' and then 'Create Widget'. One done, go back to the 'Widgets' page and click 'Edit' on your newly created widget. From here you need to copy the widget id out of the url bar. The widget id is the long numerical string after /widgets/ and before /edit and paste it into the 'data-widget-id' attribute on the tweets div.<br /><br />You can leave the #tweets div empty as it is populated by the Twitter Fetcher plugin</p>
+	</div>
+	
+	<div class="medium-11 columns right">
+			<li>
+				<pre><code>
+&lt;div id="tweets" data-widget-id="492085717044981760"&gt;
+					
+&lt;/div&gt;
+				</code></pre>
+			</li>
+		</ul>
+		<hr>
+	</div>
+	
+<a id="countdown"></a>
+	<div class="medium-12 columns">
+		<h3><strong>9. Countdown timer</strong></h3>
+		<p>The countdown timer is controlled by a javascript plugin called 'Jquery Countdown'. We have set it up so that all you need to do is pass a date into the data attribute 'data-date' in the format YYYY/MM/DD with an optional hh:mm
+		<br /><br />
+		Be sure to leave the countdown div empty as it will be populated by the plugin
+		</p>
+	</div>
+	
+	<div class="medium-11 columns right">
+			<li>
+				<pre><code>
+&lt;div class="countdown" data-date="2017/10/06"&gt;&lt;/div&gt;
+				</code></pre>
+			</li>
+			<li>
+				<pre><code>
+&lt;div class="countdown" data-date="2017/10/10 09:21"&gt;&lt;/div&gt;
+				</code></pre>
+			</li>
+		</ul>
+		<hr>
+	</div>
+	
+	<a id="mail-form-smtp"></a>
+	<div class="medium-12 columns">
+		<h3><strong>10. Linking the mail form using an SMTP server</strong></h3>
+		<p>Your mail form will not work unless you have your files running on a hosting server with PHP 5.  When you have your files ready on your hosting server, you need to edit the settings to make the email function work.</p>
+		<p>
+			Please note that you should first get your SMTP mail settings from your hosting provider before proceeding.<br />
+			It is also a good idea to set up your sending email address in cPanel before proceeding.<br />
+			Contact your hosting provider for support in this area, as we don't have access to your system to sort out these details.
+		</p>
+		<p>Open mail/mail.php and make the following changes:
+			<ul>
+				<li><strong>Line 27:</strong> Change to your own SMTP mail server and appropriate port number. Usually <code>mail.yourdomain.com</code> if you want to use your cPanel hosting server's email system.  Otherwise you can use your ISP mail server but beware you'll need to provide account login details either way.</li>
+				<li><strong><br />NOTE FOR GMAIL USERS:<br /></strong> Gmail requires that you use port 587 with TLS security so your line 27 would look like this: <br /><code>$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 587, 'tls')</code>.<br /><br /></li>
+				<li><strong>Line 28:</strong> Enter your email account username, usually the entire email address at your domain eg: <code>test@mediumra.re</code> .  You might need to create an email account in your cPanel for this if you don't already have one set up.  Otherwise you can use the mail info from your ISP.</li>
+				<li><strong>Line 29:</strong> Enter the password for your email account at your domain.  You might need to create an email account in your cPanel for this if you don't already have one set up.</li>
+				<li><strong>Line 45:</strong> Edit the subject for the email that will be sent to the recipient of your form.</li>
+				<li><strong>Line 47:</strong> Change the name and email address of the "From" person here.  This could be yourself or you could make one up and address could be <code>noreply@yourdomain.com</code> with a name of <code>Website Form</code></li>
+			</ul>
+		</p>
+		<p>
+			You will receive feedback from the Swift Mailer system on your page.  You will be given an error until you get the sending settings just right.  When the settings are correct, you'll receive a green box with a success message.  Swift Mailer is used because it is reliable in sending, and gives feedback when message has been sent.
+		</p>
+		<p>
+			You will see some more detailed information about suggested sending settings inside the mail.php file.
+		</p>
+		<p>
+			For a full range of documentation on configuring and using the Swift Mailer Library see here:<a href="http://swiftmailer.org/docs/sending.html">http://swiftmailer.org/docs/sending.html</a> 
+		</p>
+		<p>
+			If you encounter a "Connection refused "problem with the contact form you may need to contact your server or email host to determine the correct SMTP settings, or fall back to using the standard mail function (see next section).<br />
+		</p>
+		<p>
+			Of course we are always here to help too!  Please open a support ticket at our <a href="http://mediumrare.ticksy.com">forum on Ticksy</a>.
+		</p>
+	</div>
+	<a id="mail-form-mail"></a>
+	
+	
+	<div class="medium-12 columns">
+		<h3><strong>11. Linking the mail forms using native PHP mail()</strong></h3>
+		
+		<div class="section" id="the-mail-transport">
+			
+				<p>
+					The Mail Transport sends messages by delegating to PHP's internal <code>mail()</code> function.
+				</p>
+				<p>
+					In our experience, the <code>mail()</code> function is not particularly reliable.  We only recommend using this if you can't get a satisfactory result using the above mentioned SMTP method.</p>
+				<p>
+					The problem with <code>mail()</code> is that it "tries" to simplify things to the point that it actually makes things more complex due to poor interface design. The developers of Swift Mailer have gone to a lot of effort to make the Mail Transport work with a reasonable degree of consistency.
+				</p>
+				<p>
+					Serious drawbacks when using this Transport are:</p>
+					<ul class="simple">
+						<li>Unpredictable message headers</li>
+						<li>Lack of feedback regarding delivery failures</li>
+						<li>Lack of support for several plugins that require real-time delivery feedback</li>
+					</ul>
+				<p>
+					It's a last resort, and we say that with a passion!
+				</p>
+				<div class="section" id="using-the-mail-transport">
+					<h5><strong>Using the Mail Transport</strong></h5>
+					<p>Open mail/mail.php and make the following changes:
+						<ul>
+							<li><strong>Comment out:</strong> Lines 27, 28, 29 & 30 by adding // at the start.  This will take SMTP out of action.</li>
+							<li><strong>Uncomment:</strong> Line 25 by removing the // at the beginning.  This will bring the native mail() transport into action.</li>
+							<li><strong>Line 45:</strong> Edit the subject for the email that will be sent to the recipient of your form.</li>
+							<li><strong>Line 47:</strong> Change the name and email address of the "From" person here.  This could be yourself or you could make one up and address could be <code>noreply@yourdomain.com</code> with a name of <code>Website Form</code></li>
+						</ul>
+					</p>
+				</div>
+		
+			<p>
+				For a full range of documentation on configuring and using the Swift Mailer Library see here:<a href="http://swiftmailer.org/docs/sending.html">http://swiftmailer.org/docs/sending.html</a> 
+			</p>
+			<p>
+				Of course we are always here to help too!  Please open a support ticket at our <a href="http://mediumrare.ticksy.com">forum on Ticksy</a>.
+			</p>
+		</div>
+
+	
+	
+
+</div><!--end of row-->
+
+            </div>
+          </div>
+         
+
+
+
+        </section>
+
+      </div>
+    </div>
+
+    <script src="http://foundation.zurb.com/docs/assets/js/templates.js"></script>
+    <script src="http://foundation.zurb.com/docs/assets/js/all.js"></script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(
+        ['_setAccount', 'UA-2195009-2'],
+        ['_trackPageview'],
+        ['b._setAccount', 'UA-2195009-27'],
+        ['b._trackPageview']
+      );
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script>
+      $(document).foundation().foundation('joyride', 'start');
+    </script>
+  <script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&"www.cloudflare.com/email-protection"==a.substr(7 ,35)){s='';j=43;r=parseInt(a.substr(j,2),16);for(j+=2;a.length-j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+</html>
