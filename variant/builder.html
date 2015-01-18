@@ -8,8 +8,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/flexslider.min.css">
 		<link rel="stylesheet" href="css/style.css">
-		
-		<link href="http://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" type="text/css">
 				
 		
         <link href="theme/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
@@ -22,172 +21,258 @@
         <style>
         	nav{ position: absolute !important; }
         	.relative-nav{ position: relative !important; }
+        	.boxed-layout nav{ left: 48px }
         </style>
 		
+		
+		<style>
+			.vhc{position:fixed;width:100%;height:100%;z-index:9999;background:#2b2b2b;font-family:Roboto,"Helvetica Neue",Helvetica,Helvetica,Arimo,Arial,sans-serif!important;font-smoothing:antialiased;-webkit-font-smoothing:antialiased;opacity:1}.vhb{position:absolute;top:50%;left:50%;width:200px;height:40px;margin-left:-100px;margin-top:-20px;z-index:2}.vhb img{width:100%}.vha{position:absolute;bottom:40px;left:50%;width:200px;margin-left:-100px;text-align:center;color:#fff;font-size:13px}.vha span{display:block;line-height:19px;opacity:.5}.vlb{max-width:120px;display:inline-block;margin-bottom:12px;opacity:.5}.vla{position:absolute;width:500px;top:80px;margin-left:-250px;left:50%;overflow:hidden;text-align:center;opacity:0;transition:all .3s ease;-webkit-transition:all .3s ease}.vla.vhr{opacity:1}.vlc{background:#333;color:#eee;padding:24px;border-radius:2px}.vlc .oi{display:inline-block;margin-right:8px;font-size:18px;color:#f6f6f6}.vlc p{display:inline-block}.vld{cursor:wait;background-color:transparent;opacity:.3;border-radius:30px;animation:loading .5s infinite linear;-moz-animation:loading .5s infinite linear;-webkit-animation:loading .5s infinite linear;border:5px solid #fff;border-top:5px solid transparent;border-left:5px solid transparent;width:30px;height:30px;position:absolute;left:50%;margin-left:-15px;top:50%;margin-top:50px}@keyframes loading{0%{-moz-transform:rotate(0deg)}100%{-moz-transform:rotate(360deg)}}@-moz-keyframes loading{0%{-moz-transform:rotate(0deg)}100%{-moz-transform:rotate(360deg)}}@-webkit-keyframes loading{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg)}}
+		</style>
 
 	</head>
 	<body mrv_namespace="medium.rare.meetup" mrv_contenttarget=".main-container" mrv_navtarget=".nav-container" mrv_footertarget=".footer-container" vjv="pe-7s-,social_">
 	
 		<div class="vhc vhq">
+			
+			<div class="vla">
+				<ul class="slides">
+					<li>
+						<div class="vlc">
+							<span class="oi" data-glyph="lightbulb"></span>
+							<p>
+								Right-click elements on the page to edit them.
+							</p>
+						</div>
+					</li>
+					
+					<li>
+						<div class="vlc">
+							<span class="oi" data-glyph="lightbulb"></span>
+							<p>
+								Rename sections in the sidebar to enable them as in-page links.
+							</p>
+						</div>
+					</li>
+					
+					<li>
+						<div class="vlc">
+							<span class="oi" data-glyph="lightbulb"></span>
+							<p>
+								Export your pages as Variant files for later editing.
+							</p>
+						</div>
+					</li>
+					
+					<li>
+						<div class="vlc">
+							<span class="oi" data-glyph="lightbulb"></span>
+							<p>
+								Export all your pages as HTML in the pages tab.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		
+			<div class="vld">
+			
+			</div>
+		
 			<div class="vhb">
-				<img alt="Variant HTML Page Builder" src="img/vlogo.png">
+				<img alt="Variant HTML Page Builder" src="img/full-logo.png">
 			</div>
 			
 			<div class="vha">
-				<a target="_blank" href="http://www.mediumra.re/"><img class="mrare-logo-mrv" alt="Variant HTML Page Builder" src="img/mrare.png"></a>
+				<a target="_blank" href="http://www.mediumra.re/"><img class="vlb" alt="Variant HTML Page Builder" src="img/mrare.png"></a>
 				<span>&copy; Copyright 2014 Medium Rare<br>All Rights Reserved</span>
 			</div>
 			
 			<div class="vjg"></div>
 		</div>
 		
-		<div class="vek">
-			<div class="vel">
-				<ul class="slides">
-					<li>
-						<img alt="Feature 1" src="img/variant-features-1.png">
-						<div class="vhs vak vat">Got it, let's build!</div>
-					</li>
-					
-					<li>
-						<img alt="Feature 1" src="img/variant-features-3.png">
-						<div class="vhs vak vat">Got it, let's build!</div>
-					</li>
-					
-					<li>
-						<img alt="Feature 1" src="img/variant-features-2.png">
-						<div class="vhs vak vat">Got it, let's build!</div>
-					</li>
-					
-				</ul>
-			</div>
-		</div>
-		
 		<div class="vhv vba">
 			
-			<div class="vjc vjf">
-			
-				<div class="vgw vhq">
-					<i class="variant-icon variant-expand1"></i>
-				</div>
-				
-				<div class="vgx">
-				
-					<div class="vgu">
-						<span class="vei" contenteditable="true">Edit Page Title</span>
-						<i class="variant-icon variant-config text-white vfp vhq"></i>
-					</div>
-				
-					<div class="vfh">
-				
-						<div class="vho">
-							<span>Navigation Style</span>
-							<ul class="vfj">
-								
-							</ul>
-							<ul class="vfn">
-								<li class="vfo">No Nav</li>
-							</ul>
-						</div>
+			<div class="vjc vjf vle">
+
+				<div class="vlf">
+					<ul>
+						<li title="Pages" class="vlg vfp"><span class="oi" data-glyph="file"></span></li>
+						<li title="Content" class="vlh vhr"><span class="oi" data-glyph="layers"></span></li>
+						<li title="Style" class="vlj"><span class="oi" data-glyph="brush"></span></li>
+					</ul>
 					
-						<div class="vho">
-							<span>Footer Style</span>
-							<ul class="vdm">
-								
-							</ul>
-							<ul class="vfk">
-								<li class="vfl">No Footer</li>
-							</ul>
+					<div class="vll">
+					
+						<div title="Variant Settings" class="vlm">
+							<span class="oi" data-glyph="cog"></span>
 						</div>
 						
-						<div class="vho vih">
-							<span>Colour Scheme</span>
-							<ul class="vay">
+						<div title="Lock Sidebar" class="vgw vhq">
+							<span class="oi" data-glyph="lock-unlocked"></span>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="vkm vjz">
+					<div class="vgx">
+						
+					<div class="vlo vlp">
+					
+						<div class="vlq">
+							<span>Variant Pages</span>
+						</div>
+						
+						<div class="vhs vgc">Save Page As</div>
+						<div class="vhs ved">Import</div>
+						<input type="file" class="vef" name="vef[]">
+						
+						<div class="vmd">
+						
+							<div class="vfw empty-vfw">
 								
-							</ul>
+							</div>
+						</div>
+						
+						<div class="vls">
+							
+							<div class="vlt">
+								<span>Export</span><span class="oi" data-glyph="caret-bottom"></span>
+								<div class="vlu">
+									<div class="vah vhs vaj vil">.html</div>
+									<div class="vdi vhs vaj vix">.variant</div>
+								</div>
+							</div>
+					
 						</div>
 					
-					
 					</div>
+					
+					<div class="vlv vlp vhr">
+					
+						<div class="vlq">
+							<span class="vcr">Page Content</span>
+						</div>
+					
+						<div class="vlw">
+							<span class="vei vlx" contenteditable="true">Edit title tag</span>
+							<span class="oi" data-glyph="pencil"></span>
+						</div>
+						
+						<div class="vmd">
+						
+							<div class="vho">
+								<span class="vly oi" data-glyph="compass">Navigation Type</span>
+								<ul class="vfj">
+									
+								</ul>
+								<ul class="vfn">
+									<li class="vfo">No Nav</li>
+								</ul>
+							</div>
+					
+							<div class="vho">
+								<span class="vly oi" data-glyph="expand-down">Footer Type</span>
+								<ul class="vdm">
+									
+								</ul>
+								<ul class="vfk">
+									<li class="vfl">No Footer</li>
+								</ul>
+							</div>
+							
+							<div class="vem empty-vem">
+							</div>
+
+							<div class="vac">
+								<span></span>
+							</div>
+							
+						</div>
+						
+						<div class="vgr">
+							<span class="vhq">SHOW</span>
+							<span class="oi" data-glyph="trash"></span>
+						</div>
+						
+						<div class="vad">
+						
 				
-					<div class="vac">
-						<i class="variant-icon variant-plus"></i>
+							<div class="vgt">
+								
+								<div class="vlz">
+									<div class="vma">
+										<span>Filter</span>
+									</div>
+								
+									<div class="vgi">
+										<div class="vgh vhr" vbp="*">
+											Show All
+										</div>						
+									</div>
+								</div>
+							</div>
+				
+							<div class="vgm">
+							</div>
+				
+			
+						</div>
+						
+						<div class="vls">
+						
+							<div class="vdq">
+								<span class="vhq">Get HTML</span>
+							</div>		
+							
+						</div>
+					
+						
 					</div>
 					
-					<div class="vcs">
-						<span class="vcr vih"></span>
+					<div class="vmb vlp">
+					
+						<div class="vlq">
+							<span>Page Style</span>
+						</div>
+						
+						<div class="vmd">
+			
+							<div class="vho vih">
+								<span class="vly oi" data-glyph="droplet">Colour Scheme</span>
+								<ul class="vay">
+									
+								</ul>
+							</div>
+						
+						</div>
+						
+						<div class="vls">
+						
+							<div class="vdq">
+								<span class="vhq">Get HTML</span>
+							</div>
+							
+						</div>
+					
+	
 					</div>
 					
 				</div>
-				
-				<div class="vem">
-				
 				</div>
 				
-				<div class="vgz">
-					<div class="vgr">
-						<i class="variant-icon variant-trash vhq"></i>
-						<span class="vhq">Show Trash</span>
-					</div>
-					
-					<div class="vdq">
-						<i class="variant-icon variant-download vhq"></i>
-						<span class="vhq">Get Source</span>
-					</div>
-				</div>
-				
-				
-				
+						
 			</div>
 			
 			<div class="viu">
 			
 			</div>
 			
-			<div class="vfr vjq">
-				
-				<div class="vgt">
-					<span class="vjl">Options</span>
-					<i class="variant-icon variant-close-circle vex"></i>
-					<div class="vhs vgc vak">Save Page As</div>
-					<div class="vhs ved vak vix">Import</div>
-					<input type="file" class="vef" name="vef[]">
-				</div>
-				
-				<div class="vfw">
-				
-				<div class="vdi vhs vaj vix">Export all as .variant</div>
-				<div class="vah vhs vaj vil">Zip all as .html</div>
-				</div>
-				
-				<div class="vgs vhn">
-					<div class="vhs vap val">Clear Navs</div>
-					<div class="vhs vao val">Clear Footers</div>
-					<div class="vhs vaq val">Clear Pages</div>
-					<div class="vhs van val">Clear Cache</div>
-				</div>
-			
+			<div class="vhm">
+				<div class="vet vih vhe"><span>Load Previous Page</span></div>
+				<div class="vhd vih vhe"><span>Start New Page</span></div>
 			</div>
 			
-			<div class="vad vjq">
-				
-				<div class="vgt">
-					<span class="vjl">Add Sections</span>
-					<i class="variant-icon variant-close-circle vex"></i>
-					<div class="vgi">
-						<div class="vgh vhr" vbp="*">
-							Show All
-						</div>						
-					</div>
-				</div>
-				
-				<div class="vgm">
-					
-				</div>
-				
-			
-			</div>
-
 		</div>
 		
 		<div class="vaf vin vds">
@@ -217,11 +302,14 @@
 					<p>
 						Give this nav menu a name so that you can retrieve it from 'Navigation Styles' at any time later on.	
 					</p>
-					<input type="text" class="vgb vez">
+					<div class="vej">
+						<i class="oi" data-glyph="compass"></i>
+						<input type="text" placeholder="Navigation Name" class="vgb vez">
+					</div>
 				</div>
 				
 				<div class="vjp">
-					<div class="vhs vex val vil">Don't Save</div>
+					<div class="vhs vex val vil">Cancel</div>
 					<div class="vhs vga vak vix">Save</div>
 				</div>
 				
@@ -237,11 +325,14 @@
 				<p>
 					Give this footer a name so that you can retrieve it from 'Footer Styles' at any time later on.	
 				</p>
-				<input type="text" class="vfz vez">
+				<div class="vej">
+					<i class="oi" data-glyph="expand-down"></i>
+					<input type="text" placeholder="Footer Name" class="vfz vez">
+				</div>
 			</div>
 			
 			<div class="vjp">
-				<div class="vhs vex val vil">Don't Save</div>
+				<div class="vhs vex val vil">Cancel</div>
 				<div class="vhs vfy vak vix">Save</div>
 			</div>
 			
@@ -257,20 +348,22 @@
 				<p>
 					Name and save the current page for later use.
 				</p>
-				<input type="text" class="vgf vez">
+				<div class="vej">
+					<i class="oi" data-glyph="file"></i>
+					<input type="text" placeholder="Page Name" class="vgf vez">
+				</div>
 			</div>
 			
 			<div class="vjp">
-				<div class="vhs vex val vil">Don't Save</div>
+				<div class="vhs vex val vil">Cancel</div>
 				<div class="vhs vgd vak vix">Save</div>
 			</div>
 			
 		</div>
 		
-		<div class="vcw vin vds">
+		<div class="vcw vin">
 			<div class="vfa">
 				<span class="vjl">Edit Link </span><span class="vcq"></span>
-				<i class="variant-icon variant-close-circle vex"></i>
 			</div>
 			
 			<div class="vew">
@@ -282,39 +375,50 @@
 				</div>
 				<div class="vej">
 					<span>Edit link href:</span>
+					<span class="oi" data-glyph="link-intact"></span>
 					<input type="text" class="vcu vez">
 					<input type="text" class="vcv vez vih">
 				</div>
 				<div class="vej">
 					<span>Open in:</span>
+					<span class="oi" data-glyph="browser"></span>
 					<select class="vcy vja">
-						<option class="vcz veq" value="default">Default</option>
-						<option class="vcz vep" value="blank">New Tab</option>
-						<option class="vcz ver" value="self">Own Tab</option>
+						<option class="vcz edit-veq" value="default">Default</option>
+						<option class="vcz edit-link-target-_blank-mrv" value="_blank">New Tab</option>
+						<option class="vcz edit-link-target-_self-mrv" value="_self">Own Tab</option>
 					</select>
 				</div>
 			</div>
 			
 			<div class="vjp">
-				<div class="vhs vex val vil">Don't Save</div>
+				<div class="vhs vex val vil">Cancel</div>
 				<div class="vhs vcx vak vix">Save</div>
 			</div>
 			
 		</div>
 		
-		<div class="vcl vin vdo">
+		<div class="vcl vin">
 			<div class="vfa">
 				<span class="vjl">Edit Image</span>
 				<i class="variant-icon variant-close-circle vex"></i>
 			</div>
 			
 			<div class="vew">
-				<div class="vhs vhp vaj vil">Toggle Chooser</div>
-				<div class="vhs vee vak vil vih">Import Images</div>
+				<div class="vhs vhp vaj vil"><span class="oi" data-glyph="grid-three-up"></span></div>
 				<div class="vea">
 					<div class="vey">
-						<input type="text" placeholder="Image 'src' value" class="vco vez">
-						<input type="text" placeholder="Image 'alt' value" class="vcf vez">
+						<div class="vej">
+							<span>Edit image href:</span>
+							<span class="oi" data-glyph="image"></span>
+							<input type="text" placeholder="Image 'src' value" class="vco vez">
+						</div>
+						
+						<div class="vej">
+							<span>Edit image alt:</span>
+							<span class="oi" data-glyph="tags"></span>
+							<input type="text" placeholder="Image 'alt' value" class="vcf vez">
+						</div>
+							
 						<input class="vck vih" type="text">
 					</div>
 				
@@ -326,17 +430,21 @@
 					</div>
 			
 					<div class="vjp">
-						<div class="vhs vex val vil">Don't Save</div>
+						<div class="vhs vex val vil">Cancel</div>
 						<div class="vhs vcn vak vix">Save</div>
 					</div>
 				</div>
 				
-				<div class="vdz vih" vbv="hero1.jpg,hero2.jpg,hero3.jpg,hero4.jpg,hero5.jpg,hero6.jpg,hero7.jpg,hero8.jpg,hotel1.jpg,logo-dark.png,logo.png,side1.jpg,side2.jpg,side3.jpg,speaker1.jpg,speaker2.jpg,speaker3.jpg,speaker4.jpg,sponsor1.png,sponsor2.png,sponsor3.png,sponsor4.png,sponsor5.png,sponsor6.png,travel.jpg,venue.jpg,lb1.jpg,lb2.jpg,lb3.jpg,lb4.jpg,lb5.jpg,lb6.jpg,lb7.jpg,lb8.jpg,grey-bg.jpg">
-					<input type="file" class="vch" name="vci[]" multiple="multiple">
-					<div class="vdx">
-					</div>
-				</div>
+				
 			</div>
+			
+			<div class="vdz" vbv="hero1.jpg,hero2.jpg,hero3.jpg,hero4.jpg,hero5.jpg,hero6.jpg,hero7.jpg,hero8.jpg,hotel1.jpg,logo-dark.png,logo.png,side1.jpg,side2.jpg,side3.jpg,speaker1.jpg,speaker2.jpg,speaker3.jpg,speaker4.jpg,sponsor1.png,sponsor2.png,sponsor3.png,sponsor4.png,sponsor5.png,sponsor6.png,travel.jpg,venue.jpg,lb1.jpg,lb2.jpg,lb3.jpg,lb4.jpg,lb5.jpg,lb6.jpg,lb7.jpg,lb8.jpg,grey-bg.jpg">
+				<input type="file" class="vch" name="vci[]" multiple="multiple">
+				<div class="vdx">
+				</div>
+				<div class="vhs vee">Import Images</div>
+			</div>
+			
 			
 		</div>
 		
@@ -349,29 +457,32 @@
 			<div class="vew">
 				<div class="vej">
 					<span>Edit MP4 Source:</span>
+					<span class="oi" data-glyph="video"></span>
 					<input type="text" class="vda vez">
 				</div>
 				
 				<div class="vej">
 					<span>Edit WEBM Source:</span>
+					<span class="oi" data-glyph="video"></span>
 					<input type="text" class="vdg vez">
 				</div>
 				
 				<div class="vej">
 					<span>Edit OGV Source:</span>
+					<span class="oi" data-glyph="video"></span>
 					<input type="text" class="vdb vez">
 					<input class="vih vdd" type="text">
 
 				</div>
 			</div>
 			<div class="vjp">
-				<div class="vhs vex val vil">Don't Save</div>
+				<div class="vhs vex val vil">Cancel</div>
 				<div class="vhs vdf vak vix">Save</div>
 			</div>
 			
 		</div>
 		
-		<div class="vcd vin vdo">
+		<div class="vcd vin">
 			<div class="vfa">
 				<span class="vjl">Edit Icon</span>
 				<i class="variant-icon variant-close-circle vex"></i>
@@ -390,7 +501,7 @@
 			
 		</div>
 		
-		<div class="vdr vin vdo">
+		<div class="vdr vin">
 			<div class="vfa">
 				<span class="vjl">HTML Source Code</span>
 				<i class="variant-icon variant-close-circle vex"></i>
@@ -411,6 +522,20 @@
 			
 		</div>
 		
+		<div class="global-vfr vin vkf">
+			<img alt="Logo" src="img/full-logo.png">
+			<div class="vew">
+				<div class="vhs vap val">Clear Navs</div>
+				<div class="vhs vao val">Clear Footers</div>
+				<div class="vhs vaq val">Clear Pages</div>
+				<div class="vhs van val">Delete All</div>
+			</div>
+			<img alt="Medium Rare" src="img/mrare.png">
+			<p>
+				&copy; Copyright <span class="vkg">2014</span> Medium Rare
+			</p>
+		</div>
+		
 		<div class="vbi vin vdo">
 			<div class="vfa">
 				<span class="vjl vbk"> </span>
@@ -422,6 +547,7 @@
 				
 				<div class="vej">
 					<span class="vbf"> </span>
+					<span class="oi vkh" data-glyph=""></span>
 					<input type="text" class="vbg vez">
 					<input type="text" class="vbe vih">
 					<input type="text" class="vbc vih">
@@ -429,30 +555,25 @@
 			</div>
 			
 			<div class="vjp">
-				<div class="vhs vex val vil">Don't Save</div>
+				<div class="vhs vex val vil">Cancel</div>
 				<div class="vhs vbj vak vix">Save</div>
 			</div>
 			
 		</div>
 		
 		
-		<div class="vhm">
-			<div class="vet vih vhe"><span>Load Previous Page</span></div>
-			<div class="vhd vih vhe"><span>Start New Page</span></div>
-		</div>
-		
-		
 		
 		<div class="vhw vjr">
 				<div class="vau">element type</div>
+				<div class="vki vih vaw vav vfq">Options &gt;</div>
 				<div class="vgk vih vaw vav vfq"></div>
 				<div class="vdh vih vaw vav vfq"></div>
 				<div class="vct vih vaw vav vfq">Edit Link</div>
 				<div class="vcg vih vaw vav vfq">Edit Image</div>
 				<div class="vdc vih vaw vav vfq">Edit Video Source</div>
 				<div class="vcc vih vaw vav vfq">Choose Icon</div>
-				<div class="veg vih vaw vav vfq">Increase Column Width<div class="vix">&nbsp;&nbsp;&nbsp;&nbsp;]&nbsp;&nbsp;&nbsp;</div></div>
-				<div class="vbt vih vaw vav vfq">Decrease Column Width<div class="vix">&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;&nbsp;&nbsp;</div></div>
+				<div class="veg vih vaw vav vfq">Expand Column</div>
+				<div class="vbt vih vaw vav vfq">Shrink Column</div>
 				<div class="vas vih vaw vav vfq">Clone Whole Slide</div>
 				<div class="vcb vih vaw vav vfq">Delete Whole Slide</div>
 				<div class="vfe">
@@ -464,7 +585,7 @@
 		
 		<div id="vgg" class="vih">
 			
-<section id="variant-hero-slider-1" class="vim" vbs="image-mrv" vbp="header,slider" vbr="Hero Slider">
+<section id="variant-hero-slider-1" class="vim" vbs="vkj" vbp="header,slider" vbr="Hero Slider">
 	<section class="hero-slider">
 		<ul class="slides">
 			
@@ -527,7 +648,7 @@
 
 
 
-<section id="variant-register-header-1" class="vim" vbs="image-mrv" vbp="header,forms" vbr="Register Header">
+<section id="variant-register-header-1" class="vim" vbs="vkj" vbp="header,forms" vbr="Register Header">
 	<section class="hero-slider">
 		<ul class="slides">
 			
@@ -587,7 +708,7 @@
 	</section>
 </section>
 
-<section id="variant-video-header-1" class="vim" vbs="image-mrv" vbp="header" vbr="Video Header">
+<section id="variant-video-header-1" class="vim" vbs="vkj" vbp="header" vbr="Video Header">
 	<section class="hero-slider">
 		<ul class="slides">
 			<li class="video-header">
@@ -619,7 +740,7 @@
 	</section>
 </section>
 
-<section id="variant-countdown-header-1" class="vim" vbs="image-mrv" vbp="header" vbr="Countdown Header">
+<section id="variant-countdown-header-1" class="vim" vbs="vkj" vbp="header" vbr="Countdown Header">
 	<section class="hero-slider">
 		<ul class="slides">
 			<li class="countdown-header primary-overlay">
@@ -647,7 +768,7 @@
 	</section>
 </section>
 
-<section id="variant-hero-slider-1" class="vim" vbs="image-mrv" vbp="header,slider" vbr="Hero Slider">
+<section id="variant-hero-slider-1" class="vim" vbs="vkj" vbp="header,slider" vbr="Hero Slider">
 	<section class="hero-slider">
 		<ul class="slides">
 			
@@ -707,7 +828,7 @@
 	</section>
 </section>
 
-<section id="variant-instagram-3" class="vim" vbs="image-mrv" vbp="image,gallery,header" vbr="Instagram Header">
+<section id="variant-instagram-3" class="vim" vbs="vkj" vbp="image,gallery,header" vbr="Instagram Header">
 	<section class="instagram preserve-3d gallery-header" data-vip="{&quot;buttonText&quot;:&quot;Edit Instagram Feed&quot;,&quot;modalTitle&quot;:&quot;Edit Instagram Feed&quot;,&quot;modalIntro&quot;:&quot;Enter the username for your desired Instagram feed.&quot;,&quot;modalInputLabel&quot;:&quot;Instagram username:&quot;,&quot;selector&quot;:&quot;.instafeed&quot;,&quot;attribute&quot;:&quot;data-user-name&quot;,&quot;refresh&quot;:&quot;true&quot;}">
 
 		<div class="instafeed" data-user-name="insideenvato">
@@ -727,7 +848,7 @@
 	</section>
 </section>
 
-<section id="variant-page-header-1" class="vim" vbs="image-mrv" vbp="header" vbr="Image Header">
+<section id="variant-page-header-1" class="vim" vbs="vkj" vbp="header" vbr="Image Header">
 	<section class="section-header overlay preserve3d">
 	
 		<div class="background-image-holder parallax-background">
@@ -811,7 +932,7 @@
 	</section>
 </section>
 
-<section id="variant-members-1" class="vim" vbs="image-mrv" vbp="image,list" vbr="Speakers / Members">
+<section id="variant-members-1" class="vim" vbs="vkj" vbp="image,list" vbr="Speakers / Members">
 	<section class="speakers duplicatable-content">
 	
 		<div class="container">
@@ -891,7 +1012,7 @@
 	</section>
 </section>
 
-<section id="variant-members-2" class="vim" vbs="image-mrv" vbp="image,list" vbr="Speakers / Members with text">
+<section id="variant-members-2" class="vim" vbs="vkj" vbp="image,list" vbr="Speakers / Members with text">
 	<section class="speakers duplicatable-content">
 	
 		<div class="container">
@@ -1072,7 +1193,7 @@
 	</section>
 </section>
 
-<section id="variant-icon-list-2" class="vim" vbs="image-mrv" vbp="image,text" vbr="Icons list on image">
+<section id="variant-icon-list-2" class="vim" vbs="vkj" vbp="image,text" vbr="Icons list on image">
 	<section class="topics duplicatable-content overlay">
 	
 		<div class="background-image-holder parallax-background">
@@ -1186,7 +1307,7 @@
 	</section>
 </section>
 
-<section id="variant-video-divider-1" class="vim" vbs="image-mrv" vbp="video" vbr="Video Divider">
+<section id="variant-video-divider-1" class="vim" vbs="vkj" vbp="video" vbr="Video Divider">
 	<section class="strip-divider primary-overlay">
 			<div class="background-image-holder parallax-background">
 				<img class="background-image" alt="About Image" src="http://38.media.tumblr.com/c0a5e2ff697195d3ea19bade2096e19c/tumblr_n9yapqbkvv1qfirfao1_1280.jpg">
@@ -1592,7 +1713,7 @@
 	</section>
 </section>
 
-<section id="variant-instagram-1" class="vim" vbs="image-mrv" vbp="image,gallery" vbr="Instagram Gallery">
+<section id="variant-instagram-1" class="vim" vbs="vkj" vbp="image,gallery" vbr="Instagram Gallery">
 	<section class="instagram preserve-3d" data-vip="{&quot;buttonText&quot;:&quot;Edit Instagram Feed&quot;,&quot;modalTitle&quot;:&quot;Edit Instagram Feed&quot;,&quot;modalIntro&quot;:&quot;Enter the username for your desired Instagram feed.&quot;,&quot;modalInputLabel&quot;:&quot;Instagram username:&quot;,&quot;selector&quot;:&quot;.instafeed&quot;,&quot;attribute&quot;:&quot;data-user-name&quot;,&quot;refresh&quot;:&quot;true&quot;}">
 
 		<div class="instafeed" data-user-name="insideenvato">
@@ -1645,7 +1766,7 @@
 	</section>
 </section>
 
-<section id="variant-lightbox-1" class="vim" vbs="image-mrv" vbp="image,gallery" vbr="Lightbox Gallery">
+<section id="variant-lightbox-1" class="vim" vbs="vkj" vbp="image,gallery" vbr="Lightbox Gallery">
 	<section class="lightbox-gallery preserve-3d">
 
 		<div class="gallery-holder">
@@ -1840,7 +1961,7 @@
 </section>
 
 
-<section id="variant-pricing-1" class="vim" vbs="image-mrv" vbp="header" vbr="Pricing Options">
+<section id="variant-pricing-1" class="vim" vbs="vkj" vbp="header" vbr="Pricing Options">
 	<section class="pricing-options">
 		<div class="container">
 			<div class="row">
@@ -2014,7 +2135,7 @@
 	</section>
 </section>
 
-<section id="variant-countdown-divider-1" class="vim" vbs="image-mrv" vbp="image" vbr="Countdown Divider">
+<section id="variant-countdown-divider-1" class="vim" vbs="vkj" vbp="image" vbr="Countdown Divider">
 	<section class="strip-divider primary-overlay countdown-divider">
 			<div class="background-image-holder parallax-background">
 				<img class="background-image" alt="About Image" src="http://31.media.tumblr.com/b92879483bd60c7db0871cc64b694b05/tumblr_n9hyqfJavs1st5lhmo1_1280.jpg">
@@ -2037,7 +2158,7 @@
 	</section>
 </section>
 
-<section id="variant-cta-1" class="vim" vbs="image-mrv" vbp="image" vbr="Call To Action">
+<section id="variant-cta-1" class="vim" vbs="vkj" vbp="image" vbr="Call To Action">
 	<section class="strip-divider call-to-action">
 			<div class="background-image-holder parallax-background">
 				<img class="background-image" alt="BG Image" src="../img/grey-bg.jpg">
@@ -2113,7 +2234,7 @@
 	</section>
 </section>
 
-<section id="variant-sponsors-1" class="vim" vbs="image-mrv" vbp="image,list" vbr="Sponsors / Clients">
+<section id="variant-sponsors-1" class="vim" vbs="vkj" vbp="image,list" vbr="Sponsors / Clients">
 	<section class="sponsors">
 		<div class="container">
 			<div class="row">
@@ -2285,7 +2406,7 @@
 		</section>
 </section>
 
-<section id="variant-subscribe-2" class="vim" vbs="image-mrv" vbp="forms" vbr="Subscribe">
+<section id="variant-subscribe-2" class="vim" vbs="vkj" vbp="forms" vbr="Subscribe">
 	<section class="subscribe-2" data-vip="{&quot;buttonText&quot;:&quot;Embed Mailing List Form&quot;,&quot;modalTitle&quot;:&quot;Embed Mailing List Signup Form&quot;,&quot;modalIntro&quot;:&quot;Copy the form code from your mailing list provider.  Currently Mailchimp and Campaign Monitor are supported.  The `Super Slim` form from Mailchimp best suits this section as it includes only the email field.&quot;,&quot;modalInputLabel&quot;:&quot;Form embed code:&quot;,&quot;selector&quot;:&quot;.mail-list-form&quot;,&quot;attribute&quot;:&quot;srcdoc&quot;,&quot;refresh&quot;:&quot;false&quot;}">
 
 		<div class="container">
@@ -2322,7 +2443,7 @@
 	</section>
 </section>
 
-<section id="variant-tweets-1" class="vim" vbs="image-mrv" vbp="social,map" vbr="Tweets with map">
+<section id="variant-tweets-1" class="vim" vbs="vkj" vbp="social,map" vbr="Tweets with map">
 	<section class="contact-tweets">
 		<div class="container vertical-align">
 			<div class="row">
@@ -2342,7 +2463,7 @@
 	</section>
 </section>
 
-<section id="variant-contact-1" class="vim" vbs="image-mrv" vbp="social,map,forms" vbr="Form with map">
+<section id="variant-contact-1" class="vim" vbs="vkj" vbp="social,map,forms" vbr="Form with map">
 	<section class="contact-tweets">
 		<div class="container vertical-align">
 			<div class="row">
@@ -2380,7 +2501,7 @@
 	</section>
 </section>
 
-<section id="variant-map-1" class="vim" vbs="image-mrv" vbp="social,map" vbr="Fullwidth Map">
+<section id="variant-map-1" class="vim" vbs="vkj" vbp="social,map" vbr="Fullwidth Map">
 	<section class="fullwidth-map screen">
 		<div class="map-holder" data-vip="{&quot;buttonText&quot;:&quot;Edit Map Embed&quot;,&quot;modalTitle&quot;:&quot;Edit Map Embed&quot;,&quot;modalIntro&quot;:&quot;Get the embed code from your preferred mapping provider and paste here.&quot;,&quot;modalInputLabel&quot;:&quot;Map Embed Code:&quot;,&quot;selector&quot;:&quot;iframe&quot;,&quot;attribute&quot;:&quot;src&quot;}">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.2140611954183!2d-122.12117800000001!3d37.408414999999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba7963491697%3A0x2f1c2bf242a2d45d!2sElks+Lodge!5e0!3m2!1sen!2sau!4v1409714993346"></iframe>
@@ -2388,7 +2509,7 @@
 	</section>
 </section>
 
-<section id="variant-subscribe-1" class="vim" vbs="image-mrv" vbp="forms,image" vbr="Subscribe with Tweets">
+<section id="variant-subscribe-1" class="vim" vbs="vkj" vbp="forms,image" vbr="Subscribe with Tweets">
 		<section class="subscribe-1">
 			<div class="background-image-holder parallax-background">
 				<img class="background-image" alt="Background Image" src="../img/hero4.jpg">
@@ -2645,7 +2766,7 @@
         &lt;link href="css/theme.css" rel="stylesheet" type="text/css" media="all"/&gt;
         &lt;link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'&gt;
     &lt;/head&gt;
-    &lt;body&gt;
+    &lt;body [optional-body-classes]&gt;
     
     	&lt;div class="loader"&gt;
     		&lt;div class="strip-holder"&gt;
@@ -2674,6 +2795,7 @@
         &lt;script src="js/lightbox.min.js"&gt;&lt;/script&gt;
         &lt;script src="js/smooth-scroll.min.js"&gt;&lt;/script&gt;
         &lt;script src="js/twitterfetcher.min.js"&gt;&lt;/script&gt;
+        &lt;script src="js/placeholders.min.js"&gt;&lt;/script&gt;
         &lt;script src="js/scripts.js"&gt;&lt;/script&gt;
     &lt;/body&gt;
 &lt;/html&gt;
@@ -2681,21 +2803,13 @@
 			</pre>
 		</div>
 		
-		<div id="vbn" class="vih">
+		<div id="vbn" class="vih"></div>
 		
-		</div>
+		<div id="vbl" class="vih"></div>
 		
-		<div id="vbl" class="vih">
-		
-		</div>
-		
-		<ul id="vhl" class="vih">
-			
-		</ul>
+		<ul id="vhl" class="vih"></ul>
 
-		<div id="vdp" class="vih">
-		
-		</div>
+		<div id="vdp" class="vih"></div>
 		
 		<script class="vaz" type="application/json">
 			{
@@ -2784,11 +2898,34 @@
 			}
 		</script>
 		
+		<script id="vkk" type="application/json">
+			{ 
+				"options":[
+					{	
+						"type":"toggle",
+						"class":"boxed-layout",
+						"text":"Boxed Layout",
+						"initial":"off",
+						"icon":"resize-width"
+					},
+					{	
+						"type":"toggle",
+						"class":"no-loader",
+						"text":"Disable Loader",
+						"initial":"off",
+						"icon":"reload"
+					}
+				]
+			}
+		</script>
+
 		<div id="veu" class="vih">
 <div class="nav-container"></div>
 <div class="main-container"></div>
 <div class="footer-container"></div>
 		</div>
+
+		<a class="vml vih" href="#purchase-template" target="_blank">Buy Now</a>
 
 		<script src="js/jquery.js"></script>
 
@@ -2804,6 +2941,7 @@
 		
 		
 		
+		<script src="https://www.youtube.com/iframe_api"></script>
 		<script src="js/alterClass.js"></script>
 		<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
 		<script src="js/storage2.js"></script>

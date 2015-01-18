@@ -88,6 +88,25 @@ img {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
 }
+.main-container,
+.footer-container,
+.nav-container,
+nav {
+  max-width: 1600px;
+  margin: 0px auto;
+}
+.boxed-layout .main-container,
+.boxed-layout .nav-container,
+.boxed-layout nav,
+.boxed-layout .footer-container {
+  max-width: 1366px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.no-loader .loader {
+  display: none !important;
+}
 /*!
 // 3. Loader
 // --------------------------------------------------*/
@@ -201,13 +220,11 @@ img {
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-  opacity: 0;
 }
 nav {
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-  opacity: 0;
 }
 .show-content {
   opacity: 1 !important;
@@ -237,7 +254,8 @@ body {
   color: #777777;
   font-size: 14px;
   line-height: 24px;
-  background: #fff;
+  background: #eee;
+  -moz-osx-font-smoothing: grayscale;
 }
 h1,
 h2,
@@ -424,6 +442,9 @@ p a,
   background-size: cover !important;
   background-position: 50% 50% !important;
 }
+.background-image-holder img {
+  display: none;
+}
 .image-holder {
   position: relative;
   overflow: hidden;
@@ -516,21 +537,17 @@ nav .container {
 .nav-dropdown {
   position: absolute;
   z-index: -1;
-  max-height: 0px;
+  display: none;
   background: rgba(255, 255, 255, 0.9);
   min-width: 200px;
-  transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
+  overflow: hidden;
+  margin-top: -2px;
 }
 .nav-dropdown li:first-child {
   margin-top: 12px;
 }
 .nav-dropdown li {
   opacity: 0;
-  transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
   margin-right: 0px;
   float: none;
   margin-bottom: 18px;
@@ -546,6 +563,7 @@ nav .container {
 .has-dropdown:hover .nav-dropdown {
   z-index: 10;
   max-height: 300px;
+  display: block;
 }
 .has-dropdown:hover .nav-dropdown li {
   opacity: 1;
@@ -797,6 +815,7 @@ nav .container {
   padding: 0px;
   position: relative;
   overflow: hidden;
+  background: #2b2b2b;
 }
 .hero-slider .slides li {
   height: 780px;

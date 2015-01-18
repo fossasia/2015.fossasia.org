@@ -6,7 +6,7 @@ function reInit(target){
     /************** Nav Scripts **************/
 
     $(window).scroll(function() {
-        if (window.scrollY > 1) {
+        if ($(window).scrollTop() > 1) {
             $(target+' nav').addClass('sticky-nav');
         } else {
             $(target+' nav').removeClass('sticky-nav');
@@ -169,21 +169,21 @@ function reInit(target){
         if (e.preventDefault) e.preventDefault();
         else e.returnValue = false;
 
-        console.log('We have a submission...');
         var thisForm = $(this).closest('.email-form'),
             error = 0,
-            originalError = thisForm.attr('original-error');
+            originalError = thisForm.attr('original-error'),
+            loadingSpinner;
 
         if (typeof originalError !== typeof undefined && originalError !== false) {
             thisForm.find('.form-error').text(originalError);
         }
 
 
-        $(thisForm).find('.validate-required').each(function() {
-            if ($(this).val() === '') {
+        $(thisForm).find('.validate-required').each(function(){
+            if($(this).val() === ''){
                 $(this).addClass('field-error');
                 error = 1;
-            } else {
+            }else{
                 $(this).removeClass('field-error');
             }
         });
@@ -201,6 +201,11 @@ function reInit(target){
         if (error === 1) {
             $(this).closest('.email-form').find('.form-error').fadeIn(200);
         } else {
+            // Hide the error if one was shown
+            $(this).closest('.email-form').find('.form-error').fadeOut(200);
+            // Create a new loading spinner while hiding the submit button.
+            loadingSpinner = $(target+' <div />').addClass('form-loading').insertAfter($(thisForm).find('input[type="submit"]'));
+            $(thisForm).find('input[type="submit"]').hide();
             jQuery.ajax({
                 type: "POST",
                 url: "mail/mail.php",
@@ -208,6 +213,8 @@ function reInit(target){
                 success: function(response) {
                     // Swiftmailer always sends back a number representing numner of emails sent.
                     // If this is numeric (not Swift Mailer error text) AND greater than 0 then show success message.
+                    $(thisForm).find('.form-loading').remove();
+                    $(thisForm).find('input[type="submit"]').show();
                     if ($.isNumeric(response)) {
                         if (parseInt(response) > 0) {
                             thisForm.find('.form-success').fadeIn(1000);
@@ -225,6 +232,15 @@ function reInit(target){
                         thisForm.find('.form-error').text(response).fadeIn(1000);
                         thisForm.find('.form-success').fadeOut(1000);
                     }
+                },
+                error: function (errorObject, errorText, errorHTTP) {
+                    // Keep the current error text in a data attribute on the form
+                    thisForm.find('.form-error').attr('original-error', thisForm.find('.form-error').text());
+                    // Show the error with the returned error text.
+                    thisForm.find('.form-error').text(errorHTTP).fadeIn(1000);
+                    thisForm.find('.form-success').fadeOut(1000);
+                    $(thisForm).find('.form-loading').remove();
+                    $(thisForm).find('input[type="submit"]').show();
                 }
             });
         }
