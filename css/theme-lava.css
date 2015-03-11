@@ -1437,6 +1437,16 @@ nav .container {
 .schedule-title .title {
   color: #333333;
 }
+.schedule-title a {
+  color: #e12b00;
+  border-bottom: none;
+}
+
+.schedule-title a:hover {
+  color: #e12b00;
+  border-bottom: 3px solid #e12b00;
+}
+
 .schedule-text {
   max-height: 0px;
   transition: all 0.3s ease-out;
@@ -1446,6 +1456,10 @@ nav .container {
 }
 .schedule-overview li:hover {
   background-color: #f5f5f5;
+}
+
+.schedule-overview li:hover a {
+  border-bottom: 3px solid #e12b00;
 }
 .schedule-overview li:hover .schedule-text {
   max-height: 300px;
