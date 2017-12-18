@@ -508,7 +508,7 @@ nav .container {
 }
 .menu li {
   float: left;
-  margin-right: 32px;
+  margin-right: 25px;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -2296,4 +2296,19 @@ footer.classic .social-profiles {
 .social-profiles li a {
   color: #333333;
   font-size: 20px;
+}
+
+.contact-tweets {
+  padding: 0;
+}
+
+.contact-tweets .vertical-align {
+  height: 100%;
+  width: 100%;
+}
+
+.contact-tweets .vertical-align .col-md-5 {
+  position: absolute;
+  top: 15%;
+  left: 5%;
 }
