@@ -46,8 +46,12 @@
 }
 
 .icon.social_rss {
-  display: block;
+  display: inline-block;
   margin: 20px 0 10px;
+}
+.speaker-github {
+  display: inline-block;
+  font-size: 30px;
 }
 
 #result {
