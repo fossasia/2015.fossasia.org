@@ -98,3 +98,10 @@
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
+@media screen and (min-width: 280px) and (max-width: 653px) {
+.icon.pe-7s-map-marker {
+  margin-bottom: 10px;
+}
+
+}
