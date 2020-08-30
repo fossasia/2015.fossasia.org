@@ -26,8 +26,6 @@
   line-height: 30px;
   font-size: 20px;
   transition: opacity 0.2s linear;
-  margin-bottom: 20px;
-  height: 100px;
 }
 
 .tweets-feed a {
