@@ -26,8 +26,8 @@
   line-height: 30px;
   font-size: 20px;
   transition: opacity 0.2s linear;
-  margin-bottom: 20px;
-  height: 100px;
+
+
 }
 
 .tweets-feed a {
@@ -97,4 +97,29 @@
   border-bottom-width: 2px;
   margin-top: 2px;
   margin-bottom: 2px;
+}
+@media only screen and (max-width: 320px) {
+  .tweets-feed {
+    color: #FFFFFF;
+    line-height: 20px;
+    font-size: 15px;
+    transition: opacity 0.2s linear;
+
+
+  }
+  .tweets-feed a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    font-weight:350;
+  }
+  .tweets-feed .dateTweeted {
+    font-size: 10px;
+    display: block;
+  }
+
+  .icon.social_rss {
+    display: inline-block;
+    margin: 10px 0 5px;
+  }
+
 }
