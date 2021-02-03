@@ -2285,10 +2285,18 @@ footer.short {
 footer.short .top-border {
   height: 1px !important;
 }
-@media all and (max-width: 767px) {
+@media all and (max-device-width: 767px) {
   footer.classic div {
     margin-bottom: 18px;
   }
+  .contact-tweets {
+    height: 1200px;
+  }
+  .contact-tweets .map-holder {
+    height: 50%;
+    width: 100%;
+    top: 50%;
+}
 }
 .contact-methods li {
   margin-bottom: 12px;
@@ -2337,6 +2345,6 @@ footer.classic .social-profiles {
 
 .contact-tweets .vertical-align .col-md-5 {
   position: absolute;
-  top: 15%;
+  top: 10%;
   left: 5%;
 }
