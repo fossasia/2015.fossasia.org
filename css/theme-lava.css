@@ -2301,7 +2301,7 @@ footer.short .top-border {
   color: #333333;
 }
 .contact-methods span {
-  display: inline-block;
+  display:inline;
   position: relative;
   bottom: 10px;
   left: 8px;
